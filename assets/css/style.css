@@ -12,6 +12,9 @@
 .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: #517ba2;
 }
+.navbar-inverse .navbar-nav > li > a {
+  transition: background-color 0.5s;
+}
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a {
     border-radius: 4px;
@@ -95,6 +98,32 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   color: #df8a13;
+}
+
+h2 {
+  margin: 60px 0 45px 45px;
+  font-family: "PT Serif", serif;
+}
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 575.8px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 576px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 575.8px) {
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .header {
@@ -230,6 +259,60 @@ a:hover, a:focus {
   font-weight: bold;
 }
 
+.film-news {
+  overflow: hidden;
+}
+.film-news__h2 {
+  margin: 60px 0 45px 45px;
+  font-family: "PT Serif", serif;
+  font-size: 40px;
+  position: relative;
+}
+.film-news__h2::before {
+  content: "";
+  height: 3px;
+  position: absolute;
+  width: 30px;
+  margin-top: 10px;
+  left: -45px;
+  background-color: rgba(240, 173, 79, 0.7);
+}
+.film-news__h2::after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: rgba(240, 173, 79, 0.7);
+  margin: 34px 0 0 15px;
+}
+.film-news img {
+  width: 100%;
+}
+.film-news-item:hover .specification {
+  background-color: #f0ad4f;
+}
+.film-news-item:hover h3 > a {
+  color: #df8a13;
+}
+.film-news-item:hover .btn-warning {
+  background-color: #df8a13;
+}
+.film-news-item__text {
+  text-align: justify;
+}
+.film-news h3 > a {
+  transition: color 0.25s ease;
+}
+.film-news .specification {
+  margin-bottom: 0;
+  transition: background-color 0.25s ease;
+}
+.film-news .btn-warning {
+  float: right;
+  margin-bottom: 30px;
+  transition: background-color 0.25s ease;
+}
+
 .left-sidebar {
   margin-bottom: 60px;
 }
@@ -329,4 +412,28 @@ a:hover, a:focus {
   width: calc(100% - 85px);
   bottom: -5px;
   background-color: #dddddd;
+}
+
+.footer {
+  padding-top: 45px;
+  background-color: #232323;
+  color: #fbfbfb;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer a {
+  color: #777777;
+}
+.footer a:hover {
+  color: white;
+}
+
+.footer-fifth {
+  text-align: center;
+  margin: 20px 0;
+}
+.footer-fifth a {
+  color: #fbfbfb;
 }
