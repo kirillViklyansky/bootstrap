@@ -83,13 +83,19 @@
   font-size: 0.875rem;
 }
 
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-size: 1rem;
   font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
 }
 
 a {
@@ -98,6 +104,28 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   color: #df8a13;
+}
+
+h1 {
+  margin: -7.5px 0 45px;
+  font-family: "PT Serif", serif;
+}
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.8px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+h1::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
 h2 {
@@ -114,6 +142,21 @@ h2 {
     font-size: 1.75rem;
   }
 }
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+}
 
 @media (min-width: 576px) {
   h3 {
@@ -124,6 +167,11 @@ h2 {
   h3 {
     font-size: 1.25rem;
   }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -183,6 +231,7 @@ h2 {
 }
 .new-films .row {
   margin-right: -7.5px;
+  margin-bottom: -15px;
   margin-left: -7.5px;
 }
 .new-films .thumbnail {
@@ -235,6 +284,7 @@ h2 {
 }
 .top-week .row {
   margin-right: -7.5px;
+  margin-bottom: -15px;
   margin-left: -7.5px;
 }
 .top-week .thumbnail {
@@ -311,6 +361,30 @@ h2 {
   float: right;
   margin-bottom: 30px;
   transition: background-color 0.25s ease;
+}
+
+.film-info {
+  font-size: 1.2em;
+}
+.film-info__wrapper {
+  white-space: nowrap;
+}
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
+.film-info__badge {
+  font-size: 0.8em;
+}
+.film-info__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-send-comment {
+  margin-bottom: 20px;
+}
+.film-send-comment__button {
+  float: right;
 }
 
 .left-sidebar {
@@ -404,6 +478,16 @@ h2 {
   text-align: right;
   font-size: 0.8rem;
   color: #909090;
+}
+.site-news-item a {
+  transition: color 0.25s;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .site-news-item:not(:last-child)::after {
   content: " ";
