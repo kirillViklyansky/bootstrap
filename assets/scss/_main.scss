@@ -1,3 +1,5 @@
+
+
 .main {
   margin-bottom: $gap * 4;
 }
@@ -21,7 +23,9 @@
   }
   .row {
     margin-right: -$gap / 2;
+    margin-bottom: -$gap;
     margin-left: -$gap / 2;
+
   }
 
   .thumbnail {
@@ -81,6 +85,7 @@
   }
   .row {
     margin-right: -$gap / 2;
+    margin-bottom: -$gap;
     margin-left: -$gap / 2;
   }
 

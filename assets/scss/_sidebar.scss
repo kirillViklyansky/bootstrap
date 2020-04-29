@@ -107,6 +107,11 @@
       color: #909090;
      
     } 
+    a {
+      transition: color 0.25s;
+
+      @include block-shortener(1rem, 1.5, 50px, 2);
+    }
     &:not(:last-child){
         &::after{
         content: " ";
