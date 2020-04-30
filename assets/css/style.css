@@ -249,11 +249,14 @@ section {
   padding-right: 7.5px;
   padding-left: 7.5px;
   text-align: center;
+  display: block;
 }
 .new-films-item__text {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .top-week {
@@ -307,6 +310,7 @@ section {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .film-news {
