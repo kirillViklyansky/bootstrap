@@ -304,18 +304,24 @@ section {
 .film-info {
   font-size: 1.2em;
 }
+.film-info__wrapper {
+  white-space: nowrap;
+}
+.film-info__wrapper:not(:last-of-type) {
+  margin-right: 15px;
+}
 .film-info__badge {
   font-size: 0.8em;
-}
-.film-info__badge:not(:last-child) {
-  margin-right: 3%;
 }
 .film-info__well {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.film-send-comment .btn {
+.film-send-comment {
+  margin-bottom: 20px;
+}
+.film-send-comment__button {
   float: right;
 }
 
